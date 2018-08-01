@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Page Title</title>
+
+  <link rel="stylesheet" href="assets/css/main.min.css">
+  <link rel="stylesheet" href="assets/css/vendors/jquery.fullpage.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+  <script type="text/javascript" src="assets/js/vendors.js"></script>
+  <script type="text/javascript" src="assets/js/app.js"></script>
+</head>
+
+<body>
+  <!-- <div class="wrapper">
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="#"><i class="fa fa-home"></i></a></li>
+        <li><a href="/contact.html">Say Hello</a></li>
+      </ul>
+    </nav>
+  </div> -->
+
+  <section id="firstPage">
+    <div class="pageItems">
+      <div class="imageHR">
+        <img src="assets/img/eduardoBlue.png" alt="Picture of me!">
+      </div>
+      <h1>Eduardo Reis</h1>
+    </div>
+  </section>
+
+  <!-- <section id="secondPage">
+    <img src="assets/img/hero.png" alt="Setup">
+  </section> -->
+
+  <section id="thirdPage">
+    <div class="pageItems">
+      <h1>Hi, I’m Matt. Nice to meet you.</h1>
+      <h2>Since beginning my journey as a freelance designer nearly 8 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually improving my chops.</h2>
+    </div>
+  </section>
+
+  <section id="fourthPage">
+    <div class="customTable">
+      <div class="content">
+        <div class="column">
+          <h1>Programming Languages</h1>
+          <p>C / C++ / C#</p>
+          <p>VB</p>
+          <p>Java</p>
+          <p>PHP / Javascript</p>
+          <p>HTML / CSS(SASS)</p>
+        </div>
+        <div class="column">
+          <h1>Databases</h1>
+          <p>MySQL</p>
+          <p>PostgreSQL</p>
+          <p>SQL Server</p>
+          <p>MongoDB</p>
+        </div>
+        <div class="column">
+          <h1>Other</h1>
+          <p>Git / SVN </p>
+          <p> Adobe Photoshop </p>
+          <p> Sony Vegas </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="fifthPage">
+    <div class="pageItems">
+      <h1>Projects</h1>
+      <h2>Here are some projects I've worked on.</h2>
+      <button id="all" class="active">All</button>
+      <button id="unity">Unity</button>
+      <button id="android">Android</button>
+      <button id="website">Website</button>
+      <button id="ros">ROS</button>
+      <button id="skype">Skype</button>
+      <div class="projects">
+        <div class="project">
+          <div>
+            <img src="assets/img/skypeBotTablet.jpg" alt="SkypeBot" data-type="skype">
+            <h2>Skype Bot</h2>
+          </div>
+
+        </div>
+        <div class="project">
+          <div>
+            <img src="assets/img/weatherAppAndroid.png" alt="WeatherApp" data-type="android">
+            <h2>Weather App</h2>
+          </div>
+
+        </div>
+        <div class="project">
+          <div>
+            <img src="assets/img/shoppingCartAppAndroid.png" alt="ShoppingCartApp" data-type="android">
+            <h2>Shopping Cart App</h2>
+          </div>
+
+        </div>
+        <div class="project">
+          <div>
+            <img src="assets/img/autonomousDrivingVehicleMacbook.png" alt="AutonomusDrivingVehicle" data-type="ros">
+            <h2>Autonomus Driving Vehicle</h2>
+          </div>
+        </div>
+        <div class="project">
+          <div>
+            <img src="assets/img/impossibleFeupAndroid.png" alt="ImpossibleFeup" data-type="unity">
+            <h2>ImpossibleFeup</h2>
+          </div>
+
+        </div>
+        <div class="project">
+          <div>
+            <img src="assets/img/healthChefsAndroid.png" alt="HealthChefs" data-type="unity">
+            <h2>HealthChefs</h2>
+          </div>
+
+        </div>
+        <div class="project">
+          <div>
+            <img src="assets/img/pawzMacbook.png" alt="Pawz" data-type="website">
+            <h2>PawZ</h2>
+          </div>
+        </div>
+        <div class="project">
+          <div>
+            <img src="assets/img/infinitoMacbook.png" alt="Infinito" data-type="website">
+            <h2>Infinito</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="footer">
+    <p>
+      <a href="https://www.linkedin.com/in/eduardo-reis-490608126/"><i class="fa fa-linkedin"></i></a>
+      <a href="https://github.com/edureis95"><i class="fa fa-github"></i></a>
+      <a href="mailto:eduardojdreis@gmail.com"><i class="fa fa-envelope"></i></a>
+    </p>
+  </section>
+
+</body>
+<script>
+  $(document).ready(function() {
+
+    var options = ['#all', '#unity', '#website', '#android', '#ros', '#skype'];
+
+    function changeProjectsShown(button) {
+
+      if (button == '#all') {
+        $('.projects .project').removeClass('hidden');
+        $(options[1]).removeClass('active');
+        $(options[2]).removeClass('active');
+        $(options[3]).removeClass('active');
+        $(options[4]).removeClass('active');
+        $(options[5]).removeClass('active');
+      } else {
+        for (var i = 0; i < options.length; i++) {
+          if (button == options[i]) {
+            $('.projects img[data-type="' + options[i].slice(1) + '"]').parent().parent().removeClass('hidden');
+            $(options[i]).addClass('active');
+          } else {
+            $('.projects img[data-type="' + options[i].slice(1) + '"]').parent().parent().addClass('hidden');
+            $(options[i]).removeClass('active');
+          }
+        }
+      }
+    }
+
+    $('#all').click(function() {
+      changeProjectsShown('#all');
+    });
+
+    $('#unity').click(function() {
+      changeProjectsShown('#unity');
+    });
+
+    $('#android').click(function() {
+      changeProjectsShown('#android');
+    });
+
+    $('#website').click(function() {
+      changeProjectsShown('#website');
+    });
+
+    $('#ros').click(function() {
+      changeProjectsShown('#ros');
+    });
+
+    $('#skype').click(function() {
+      changeProjectsShown('#skype');
+    });
+
+    const grid = document.querySelector(".projects");
+    const {
+      unwrapGrid,
+      forceGridAnimation
+    } = animateCSSGrid.wrapGrid(grid, {
+      duration: 600
+    });
+
+  });
+</script>
+
+</html>
