@@ -484,6 +484,7 @@ h2 {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 0.65fr));
       grid-gap: 40px;
+	  justify-content: center;
       margin: 35px auto; }
       #fifthPage .pageItems .projects .project {
         background-color: #0A283D; }
