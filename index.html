@@ -3,15 +3,15 @@
 
 <head>
   <title>Eduardo Reis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="assets/css/main.min.css">
   <link rel="stylesheet" href="assets/css/vendors/jquery.fullpage.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="assets/css/vendors/montserratFont.css" rel="stylesheet">
 
-  <script type="text/javascript" src="assets/js/vendors.js"></script>
-  <script type="text/javascript" src="assets/js/app.js"></script>
+  <script async id="vendors" type="text/javascript" src="assets/js/vendors.js"></script>
+  <script async type="text/javascript" src="assets/js/app.js"></script>
 </head>
 
 <body>
@@ -151,65 +151,7 @@
 
 </body>
 <script>
-  $(document).ready(function() {
 
-    var options = ['#all', '#unity', '#website', '#android', '#ros', '#skype'];
-
-    function changeProjectsShown(button) {
-
-      if (button == '#all') {
-        $('.projects .project').removeClass('hidden');
-        $(options[1]).removeClass('active');
-        $(options[2]).removeClass('active');
-        $(options[3]).removeClass('active');
-        $(options[4]).removeClass('active');
-        $(options[5]).removeClass('active');
-      } else {
-        for (var i = 0; i < options.length; i++) {
-          if (button == options[i]) {
-            $('.projects img[data-type="' + options[i].slice(1) + '"]').parent().parent().removeClass('hidden');
-            $(options[i]).addClass('active');
-          } else {
-            $('.projects img[data-type="' + options[i].slice(1) + '"]').parent().parent().addClass('hidden');
-            $(options[i]).removeClass('active');
-          }
-        }
-      }
-    }
-
-    $('#all').click(function() {
-      changeProjectsShown('#all');
-    });
-
-    $('#unity').click(function() {
-      changeProjectsShown('#unity');
-    });
-
-    $('#android').click(function() {
-      changeProjectsShown('#android');
-    });
-
-    $('#website').click(function() {
-      changeProjectsShown('#website');
-    });
-
-    $('#ros').click(function() {
-      changeProjectsShown('#ros');
-    });
-
-    $('#skype').click(function() {
-      changeProjectsShown('#skype');
-    });
-
-    const grid = document.querySelector(".projects");
-    const {
-      unwrapGrid,
-      forceGridAnimation
-    } = animateCSSGrid.wrapGrid(grid, {
-      duration: 600
-    });
-
-  });
 </script>
 
 </html>
