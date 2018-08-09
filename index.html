@@ -7,15 +7,16 @@
 
   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="assets/css/main.min.css">
-  <link rel="stylesheet" href="assets/css/vendors/jquery.fullpage.min.css">
-  <link href="assets/css/vendors/montserratFont.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="assets/css/vendors/montserratFont.css" rel="preload" as="style" onload="this.rel='stylesheet'">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" as="style" onload="this.rel='stylesheet'">
 
-  <script async id="vendors" type="text/javascript" src="assets/js/vendors.js"></script>
-  <script async type="text/javascript" src="assets/js/app.js"></script>
+  <script defer id="vendors" type="text/javascript" src="assets/js/vendors.js"></script>
+  <script defer type="text/javascript" src="assets/js/app.js"></script>
 </head>
 
 <body>
+
+  <div class="preLoad"></div>
   <!-- <div class="wrapper">
 
     <nav class="navbar">
