@@ -380,6 +380,7 @@ body {
   position: relative; }
 
 #firstPage {
+  background-image: url("../img/bg.jpg");
   background-size: cover;
   display: flex;
   flex-direction: column;
