@@ -1,145 +1,272 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-123735178-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
 
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123735178-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-123735178-1");
+    </script>
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'UA-123735178-1');
-  </script>
+    <style>
+      #firstPage {
+        background-image: url("assets/img/bg.jpg");
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: calc(100vh);
+      }
+    </style>
 
-  <style>
-    #firstPage {
-      background-image: url('../img/bg.jpg');
-      background-size: cover;
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      height: calc(100vh);
-    }
-  </style>
+    <title>Eduardo Reis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <link
+      href="assets/css/vendors/montserratFont.css"
+      rel="preload"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <script
+      defer
+      id="vendors"
+      type="text/javascript"
+      src="assets/js/vendors.js"
+    ></script>
+    <script defer type="text/javascript" src="assets/js/app.js"></script>
+  </head>
 
-  <title>Eduardo Reis</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
-  <link href="assets/css/vendors/montserratFont.css" rel="preload" as="style" onload="this.rel='stylesheet'">
-  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" as="style" onload="this.rel='stylesheet'">
-  <script defer id="vendors" type="text/javascript" src="assets/js/vendors.js"></script>
-  <script defer type="text/javascript" src="assets/js/app.js"></script>
-</head>
-
-<body>
-  <section id="firstPage">
-    <div class="pageItems">
-      <div class="imageHR"> <img src="" data-src="assets/img/eduardoSmall.png" alt="Picture of me!"> </div>
-      <h1>Eduardo Reis</h1> </div>
-  </section>
-  <section id="thirdPage">
-    <div class="pageItems">
-      <h1>Hi, I’m Eduardo. Nice to meet you.</h1>
-      <h2>Engineer passionate about software development and learning new stuff. Experience developing games, mobile apps, websites and other things.</h2> </div>
-  </section>
-  <section id="fourthPage">
-    <div class="customTable">
-      <div class="content">
-        <div class="column">
-          <h1>Programming Languages</h1>
-          <p>C / C++ / C#</p>
-          <p>VB</p>
-          <p>Java</p>
-          <p>PHP / Javascript</p>
-          <p>HTML / CSS(SASS)</p>
+  <body>
+    <section id="firstPage">
+      <div class="pageItems">
+        <div class="imageHR">
+          <img
+            src=""
+            data-src="assets/img/eduardoSmall.png"
+            alt="Picture of me!"
+          />
         </div>
-        <div class="column">
-          <h1>Databases</h1>
-          <p>MySQL</p>
-          <p>PostgreSQL</p>
-          <p>SQL Server</p>
-          <p>MongoDB</p>
-        </div>
-        <div class="column">
-          <h1>Other</h1>
-          <p>Git / SVN </p>
-          <p> Adobe Photoshop </p>
-          <p> Sony Vegas </p>
-        </div>
+        <h1>Eduardo Reis</h1>
       </div>
-    </div>
-  </section>
-  <section id="fifthPage">
-    <div class="pageItems">
-      <h1>Projects</h1>
-      <h2>Here are some projects I've worked on.</h2>
-      <button id="all" class="active">All</button>
-      <button id="unity">Unity</button>
-      <button id="android">Android</button>
-      <button id="website">Website</button>
-      <button id="ros">ROS</button>
-      <button id="skype">Skype</button>
-      <div class="projects">
-        <div class="project">
-          <div>
-            <a target="_blank" rel="noopener noreferrer" href="https://github.com/edureis95/sonae-skype-bot"> <img src="" data-src="assets/img/skypeBotTablet.jpg" alt="SkypeBot" data-type="skype">
-                            <h2>Skype Bot</h2> </a>
+    </section>
+    <section id="thirdPage">
+      <div class="pageItems">
+        <h1>Hi, I’m Eduardo. Nice to meet you.</h1>
+        <h2>
+          Engineer passionate about software development and learning new stuff.
+          Experience developing games, mobile apps, websites and other things.
+        </h2>
+      </div>
+    </section>
+    <section id="fourthPage">
+      <div class="customTable">
+        <div class="content">
+          <div class="column">
+            <h1>Programming Languages</h1>
+            <p>C / C++ / C#</p>
+            <p>VB</p>
+            <p>Java</p>
+            <p>PHP / Javascript</p>
+            <p>HTML / CSS(SASS)</p>
           </div>
-        </div>
-        <div class="project">
-          <div>
-            <a target="_blank" rel="noopener noreferrer" href="https://github.com/edureis95/cmov-x"> <img src="" data-src="assets/img/weatherAppAndroid.jpg" alt="WeatherApp" data-type="android">
-                            <h2>Weather App</h2> </a>
+          <div class="column">
+            <h1>Databases</h1>
+            <p>MySQL</p>
+            <p>PostgreSQL</p>
+            <p>SQL Server</p>
+            <p>MongoDB</p>
           </div>
-        </div>
-        <div class="project">
-          <div>
-            <a target="_blank" rel="noopener noreferrer" href="https://github.com/edureis95/CMOVapp"> <img src="" data-src="assets/img/shoppingCartAppAndroid.jpg" alt="ShoppingCartApp" data-type="android">
-                            <h2>Shopping Cart App</h2> </a>
-          </div>
-        </div>
-        <div class="project">
-          <div>
-            <a target="_blank" rel="noopener noreferrer" href="https://github.com/edureis95/ROBO---reactive-robot"> <img src="" data-src="assets/img/autonomousDrivingVehicleMacbook.jpg" alt="AutonomusDrivingVehicle" data-type="ros">
-                            <h2>Autonomus Driving Vehicle</h2> </a>
-          </div>
-        </div>
-        <div class="project">
-          <div>
-            <a target="_blank" rel="noopener noreferrer" href="https://github.com/edureis95/DJCO-feup"> <img src="" data-src="assets/img/impossibleFeupAndroid.jpg" alt="ImpossibleFeup" data-type="unity">
-                            <h2>ImpossibleFeup</h2> </a>
-          </div>
-        </div>
-        <div class="project">
-          <div>
-            <a target="_blank" rel="noopener noreferrer" href="https://github.com/edureis95/HealthChefs"> <img src="" data-src="assets/img/healthChefsAndroid.jpg" alt="HealthChefs" data-type="unity">
-                            <h2>HealthChefs</h2> </a>
-          </div>
-        </div>
-        <div class="project">
-          <div>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=FTKz2AWwiVY"> <img src="" data-src="assets/img/silentIslandMacbook.jpg" alt="Pawz" data-type="unity">
-                            <h2>SilentIsland</h2> </a>
-          </div>
-        </div>
-        <div class="project">
-          <div>
-            <a target="_blank" rel="noopener noreferrer" href="https://github.com/edureis95/infinito"> <img src="" data-src="assets/img/infinitoMacbook.jpg" alt="Infinito" data-type="website">
-                            <h2>Infinito</h2> </a>
+          <div class="column">
+            <h1>Other</h1>
+            <p>Git / SVN</p>
+            <p>Adobe Photoshop</p>
+            <p>Sony Vegas</p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section id="footer">
-    <div> <a href="https://www.linkedin.com/in/eduardo-reis-490608126/"><i class="fa fa-linkedin"></i></a> <a href="https://github.com/edureis95"><i class="fa fa-github"></i></a> <a href="mailto:eduardojdreis@gmail.com"><i class="fa fa-envelope-o"></i></a>      </div>
-  </section>
-</body>
-<footer>
-  <link rel="stylesheet" href="assets/css/main.min.css">
-</footer>
-
+    </section>
+    <section id="fifthPage">
+      <div class="pageItems">
+        <h1>Projects</h1>
+        <h2>Here are some projects I've worked on.</h2>
+        <button id="all" class="active">All</button>
+        <button id="unity">Unity</button>
+        <button id="android">Android</button>
+        <button id="website">Website</button>
+        <button id="ros">ROS</button>
+        <button id="skype">Skype</button>
+        <div class="projects">
+          <div class="project">
+            <div>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/edureis95/sonae-skype-bot"
+              >
+                <img
+                  src=""
+                  data-src="assets/img/skypeBotTablet.jpg"
+                  alt="SkypeBot"
+                  data-type="skype"
+                />
+                <h2>Skype Bot</h2>
+              </a>
+            </div>
+          </div>
+          <div class="project">
+            <div>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/edureis95/cmov-x"
+              >
+                <img
+                  src=""
+                  data-src="assets/img/weatherAppAndroid.jpg"
+                  alt="WeatherApp"
+                  data-type="android"
+                />
+                <h2>Weather App</h2>
+              </a>
+            </div>
+          </div>
+          <div class="project">
+            <div>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/edureis95/CMOVapp"
+              >
+                <img
+                  src=""
+                  data-src="assets/img/shoppingCartAppAndroid.jpg"
+                  alt="ShoppingCartApp"
+                  data-type="android"
+                />
+                <h2>Shopping Cart App</h2>
+              </a>
+            </div>
+          </div>
+          <div class="project">
+            <div>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/edureis95/ROBO---reactive-robot"
+              >
+                <img
+                  src=""
+                  data-src="assets/img/autonomousDrivingVehicleMacbook.jpg"
+                  alt="AutonomusDrivingVehicle"
+                  data-type="ros"
+                />
+                <h2>Autonomus Driving Vehicle</h2>
+              </a>
+            </div>
+          </div>
+          <div class="project">
+            <div>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/edureis95/DJCO-feup"
+              >
+                <img
+                  src=""
+                  data-src="assets/img/impossibleFeupAndroid.jpg"
+                  alt="ImpossibleFeup"
+                  data-type="unity"
+                />
+                <h2>ImpossibleFeup</h2>
+              </a>
+            </div>
+          </div>
+          <div class="project">
+            <div>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/edureis95/HealthChefs"
+              >
+                <img
+                  src=""
+                  data-src="assets/img/healthChefsAndroid.jpg"
+                  alt="HealthChefs"
+                  data-type="unity"
+                />
+                <h2>HealthChefs</h2>
+              </a>
+            </div>
+          </div>
+          <div class="project">
+            <div>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.youtube.com/watch?v=FTKz2AWwiVY"
+              >
+                <img
+                  src=""
+                  data-src="assets/img/silentIslandMacbook.jpg"
+                  alt="Pawz"
+                  data-type="unity"
+                />
+                <h2>SilentIsland</h2>
+              </a>
+            </div>
+          </div>
+          <div class="project">
+            <div>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/edureis95/infinito"
+              >
+                <img
+                  src=""
+                  data-src="assets/img/infinitoMacbook.jpg"
+                  alt="Infinito"
+                  data-type="website"
+                />
+                <h2>Infinito</h2>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="footer">
+      <div>
+        <a href="https://www.linkedin.com/in/eduardo-reis-490608126/"
+          ><i class="fa fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/edureis95"><i class="fa fa-github"></i></a>
+        <a href="mailto:eduardojdreis@gmail.com"
+          ><i class="fa fa-envelope-o"></i
+        ></a>
+      </div>
+    </section>
+  </body>
+  <footer>
+    <link rel="stylesheet" href="assets/css/main.min.css" />
+  </footer>
 </html>
